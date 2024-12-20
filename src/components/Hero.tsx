@@ -1,8 +1,29 @@
-import { ArrowRight, BarChart3, Bug, Car, Clock, Cpu, Headphones, Shield, Users, Zap } from "lucide-react";
+"use-client";
+
+import {
+  ArrowRight,
+  BarChart3,
+  Bug,
+  Car,
+  Clock,
+  Cpu,
+  Headphones,
+  Shield,
+  Users,
+  Zap,
+} from "lucide-react";
 import { Button } from "./ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "./ui/card";
+import { useRouter } from "next/navigation";
 
 const Hero = () => {
+  const router = useRouter();
   return (
     <main className="flex-1">
       <section className="w-full py-12 md:py-24 lg:py-32 bg-blue-600 text-white">
@@ -73,7 +94,10 @@ const Hero = () => {
                       </div>
                     </div>
                   </div>
-                  <Button className="mt-6 bg-blue-600 hover:bg-blue-700">
+                  <Button
+                    className="mt-6 bg-blue-600 hover:bg-blue-700"
+                    onClick={() => router.push("/customer-portal")}
+                  >
                     Access Portal
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>

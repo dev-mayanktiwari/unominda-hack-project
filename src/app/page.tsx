@@ -1,25 +1,5 @@
-import Link from "next/link";
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import {
-  ArrowRight,
-  Headphones,
-  Bug,
-  BarChart3,
-  Shield,
-  Clock,
-  Users,
-  Car,
-  Zap,
-  Cpu,
-} from "lucide-react";
+"use client"
+
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";

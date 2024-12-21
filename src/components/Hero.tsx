@@ -29,11 +29,11 @@ const Hero = () => {
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-                Driving The New Future of Mobility
+                Solution for all of the productivity needs
               </h1>
               <p className="mx-auto max-w-[700px] text-blue-100 dark:text-gray-200 md:text-xl">
-                Advanced solutions for automotive excellence. Empowering your
-                journey with innovation and reliability.
+                We provide an all-in-one, AI-powered solution to enhance
+                business efficiency and streamline operations.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
@@ -135,10 +135,12 @@ const Hero = () => {
                       </div>
                     </div>
                   </div>
-                  <Button className="mt-6 bg-blue-600 dark:bg-blue-700 hover:bg-blue-700 dark:hover:bg-blue-800">
-                    Launch Detection System
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
+                  <Link href="/defect-detection">
+                    <Button className="mt-6 bg-blue-600 dark:bg-blue-700 hover:bg-blue-700 dark:hover:bg-blue-800">
+                      Launch Detection System
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
               <Card className="relative overflow-hidden transition-all hover:shadow-lg border-blue-200 dark:border-gray-600 hover:border-blue-400 dark:hover:border-gray-400">
